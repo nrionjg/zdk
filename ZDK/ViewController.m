@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <ZendeskSDK/ZendeskSDK.h>
+#import "FirstViewController.h"
 
 @interface ViewController ()
 
@@ -24,4 +26,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)createRequestButton_Tap:(id)sender
+{
+    FirstViewController * first = [[FirstViewController alloc] init];
+    UINavigationController * navController = [[UINavigationController alloc] init];
+    [navController pushViewController:first animated:YES];
+    
+    [self presentViewController:navController animated:YES completion:^{
+        
+    }];
+}
 @end

@@ -14,6 +14,10 @@
 		42D86DA41AC559A900106E6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D86DA31AC559A900106E6B /* Images.xcassets */; };
 		42D86DA71AC559A900106E6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D86DA51AC559A900106E6B /* LaunchScreen.xib */; };
 		42D86DB31AC559A900106E6B /* ZDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D86DB21AC559A900106E6B /* ZDKTests.m */; };
+		42FC2EDD1AE5042200D77B47 /* JGZDKCreateRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC2EDC1AE5042200D77B47 /* JGZDKCreateRequestViewController.m */; };
+		42FC2EE11AE504D900D77B47 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC2EDF1AE504D900D77B47 /* FirstViewController.m */; };
+		42FC2EE21AE504D900D77B47 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42FC2EE01AE504D900D77B47 /* FirstViewController.xib */; };
+		92DB122A89DF40EF2E98058B /* libPods-ZDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B4DBBAD758B22E6EEB8192 /* libPods-ZDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42D86D931AC559A900106E6B /* ZDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DFFC7032A84DA75641E6DA1 /* Pods-ZDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZDK/Pods-ZDK.debug.xcconfig"; sourceTree = "<group>"; };
+		42D86D931AC559A900106E6B /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D86D971AC559A900106E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D86D981AC559A900106E6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42D86D9A1AC559A900106E6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +45,13 @@
 		42D86DAC1AC559A900106E6B /* ZDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D86DB11AC559A900106E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D86DB21AC559A900106E6B /* ZDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDKTests.m; sourceTree = "<group>"; };
+		42FC2EDB1AE5042200D77B47 /* JGZDKCreateRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGZDKCreateRequestViewController.h; sourceTree = "<group>"; };
+		42FC2EDC1AE5042200D77B47 /* JGZDKCreateRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGZDKCreateRequestViewController.m; sourceTree = "<group>"; };
+		42FC2EDE1AE504D900D77B47 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		42FC2EDF1AE504D900D77B47 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		42FC2EE01AE504D900D77B47 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		59B4DBBAD758B22E6EEB8192 /* libPods-ZDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D96E99A18109C16091033C /* Pods-ZDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZDK/Pods-ZDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DB122A89DF40EF2E98058B /* libPods-ZDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,13 +79,15 @@
 				42D86D951AC559A900106E6B /* ZDK */,
 				42D86DAF1AC559A900106E6B /* ZDKTests */,
 				42D86D941AC559A900106E6B /* Products */,
+				78674769647A063708881F4B /* Pods */,
+				C9F8AC417A0E13BFE87C2187 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		42D86D941AC559A900106E6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42D86D931AC559A900106E6B /* ZDK.app */,
+				42D86D931AC559A900106E6B /* app.app */,
 				42D86DAC1AC559A900106E6B /* ZDKTests.xctest */,
 			);
 			name = Products;
@@ -89,6 +104,11 @@
 				42D86DA31AC559A900106E6B /* Images.xcassets */,
 				42D86DA51AC559A900106E6B /* LaunchScreen.xib */,
 				42D86D961AC559A900106E6B /* Supporting Files */,
+				42FC2EDB1AE5042200D77B47 /* JGZDKCreateRequestViewController.h */,
+				42FC2EDC1AE5042200D77B47 /* JGZDKCreateRequestViewController.m */,
+				42FC2EDE1AE504D900D77B47 /* FirstViewController.h */,
+				42FC2EDF1AE504D900D77B47 /* FirstViewController.m */,
+				42FC2EE01AE504D900D77B47 /* FirstViewController.xib */,
 			);
 			path = ZDK;
 			sourceTree = "<group>";
@@ -119,6 +139,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		78674769647A063708881F4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DFFC7032A84DA75641E6DA1 /* Pods-ZDK.debug.xcconfig */,
+				F2D96E99A18109C16091033C /* Pods-ZDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9F8AC417A0E13BFE87C2187 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59B4DBBAD758B22E6EEB8192 /* libPods-ZDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42D86DB61AC559A900106E6B /* Build configuration list for PBXNativeTarget "ZDK" */;
 			buildPhases = (
+				55E7C1329F4ECEF8A038DB4E /* Check Pods Manifest.lock */,
 				42D86D8F1AC559A900106E6B /* Sources */,
 				42D86D901AC559A900106E6B /* Frameworks */,
 				42D86D911AC559A900106E6B /* Resources */,
+				89C32C87B4AD930706A7FDC3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,7 +175,7 @@
 			);
 			name = ZDK;
 			productName = ZDK;
-			productReference = 42D86D931AC559A900106E6B /* ZDK.app */;
+			productReference = 42D86D931AC559A900106E6B /* app.app */;
 			productType = "com.apple.product-type.application";
 		};
 		42D86DAB1AC559A900106E6B /* ZDKTests */ = {
@@ -168,9 +207,11 @@
 				TargetAttributes = {
 					42D86D921AC559A900106E6B = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 78FBJ4Y883;
 					};
 					42D86DAB1AC559A900106E6B = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 78FBJ4Y883;
 						TestTargetID = 42D86D921AC559A900106E6B;
 					};
 				};
@@ -202,6 +243,7 @@
 				42D86DA21AC559A900106E6B /* Main.storyboard in Resources */,
 				42D86DA71AC559A900106E6B /* LaunchScreen.xib in Resources */,
 				42D86DA41AC559A900106E6B /* Images.xcassets in Resources */,
+				42FC2EE21AE504D900D77B47 /* FirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +256,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55E7C1329F4ECEF8A038DB4E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89C32C87B4AD930706A7FDC3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZDK/Pods-ZDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		42D86D8F1AC559A900106E6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,7 +296,9 @@
 			files = (
 				42D86D9F1AC559A900106E6B /* ViewController.m in Sources */,
 				42D86D9C1AC559A900106E6B /* AppDelegate.m in Sources */,
+				42FC2EE11AE504D900D77B47 /* FirstViewController.m in Sources */,
 				42D86D991AC559A900106E6B /* main.m in Sources */,
+				42FC2EDD1AE5042200D77B47 /* JGZDKCreateRequestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +348,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_MODULES_AUTOLINK = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -280,7 +358,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nicolas Rion (K96E59Z27F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nicolas Rion (K96E59Z27F)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -297,9 +376,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "632f2f81-e3ef-4142-98b3-830a78a188ba";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +394,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_MODULES_AUTOLINK = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -322,7 +404,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nicolas Rion (K96E59Z27F)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Nicolas Rion (K96E59Z27F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nicolas Rion (K96E59Z27F)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -333,8 +417,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "632f2f81-e3ef-4142-98b3-830a78a188ba";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -343,21 +429,43 @@
 		};
 		42D86DB71AC559A900106E6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DFFC7032A84DA75641E6DA1 /* Pods-ZDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_AUTOLINK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Gibaud (RXN9K3T99V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mark Gibaud (RXN9K3T99V)";
 				INFOPLIST_FILE = ZDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-ZDK-ZendeskSDK\"",
+					"-framework",
+					"\"ZendeskSDK\"",
+				);
+				PRODUCT_NAME = app;
+				PROVISIONING_PROFILE = "632f2f81-e3ef-4142-98b3-830a78a188ba";
 			};
 			name = Debug;
 		};
 		42D86DB81AC559A900106E6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2D96E99A18109C16091033C /* Pods-ZDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_AUTOLINK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Gibaud (RXN9K3T99V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mark Gibaud (RXN9K3T99V)";
 				INFOPLIST_FILE = ZDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-ZDK-ZendeskSDK\"",
+					"-framework",
+					"\"ZendeskSDK\"",
+				);
+				PRODUCT_NAME = app;
+				PROVISIONING_PROFILE = "632f2f81-e3ef-4142-98b3-830a78a188ba";
 			};
 			name = Release;
 		};
@@ -365,6 +473,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -376,6 +486,7 @@
 				INFOPLIST_FILE = ZDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZDK.app/ZDK";
 			};
 			name = Debug;
@@ -384,6 +495,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -391,6 +504,7 @@
 				INFOPLIST_FILE = ZDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZDK.app/ZDK";
 			};
 			name = Release;
@@ -414,6 +528,7 @@
 				42D86DB81AC559A900106E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42D86DB91AC559A900106E6B /* Build configuration list for PBXNativeTarget "ZDKTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +537,7 @@
 				42D86DBB1AC559A900106E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
